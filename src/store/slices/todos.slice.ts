@@ -83,10 +83,10 @@ export const todoSlice = createSlice({
       return (state = [...state, { ...action.payload, isCompleted: false }]);
     },
     removeTodo(state, action: PayloadAction<number>) {
-      state = state.filter((item) => item.id !== action.payload);
+      return (state = state.filter((item) => item.id !== action.payload));
     },
     cleanTodoList(state) {
-      state.slice(0, state.length);
+      return state.slice(0, state.length);
     },
   },
 });
