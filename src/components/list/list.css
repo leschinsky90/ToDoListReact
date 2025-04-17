@@ -1,0 +1,63 @@
+.todoCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container1 {
+  margin-bottom: 12px;
+}
+
+.header {
+  padding: 10px;
+  border-radius: 4px;
+  color: white; /* Цвет текста заголовка */
+}
+
+.header.highPriority {
+  background-color: #e74c3c;
+}
+
+.header.mediumPriority {
+  background-color: #f39c12;
+}
+
+.header.lowPriority {
+  background-color: #2ecc71;
+}
+
+.title {
+  margin: 0;
+}
+
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.isCompleted {
+  width: 60px;
+  height: 60px;
+  background: green;
+}
+
+.isNotCompleted {
+  width: 60px;
+  height: 60px;
+  background: red;
+}
+
+.controlButtons button {
+  margin-left: 8px;
+  height: 50px;
+  width: 50px;
+}
